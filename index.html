@@ -11,18 +11,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     :root {
-      --primary: #2563EB;
-      --primary-active: #1d4ed8;
-      --primary-light: #dbeafe;
-      --secondary: #22C55E;
-      --secondary-light: #dcfce7;
-      --accent: #F97316;
-      --accent-light: #ffedd5;
-      --dark: #111827;
-      --dark-elevated: #1a1a1a;
+      --primary: #f0a202;
+      --primary-active: #f18805;
+      --primary-light: #fde7b3;
+      --secondary: #202c59;
+      --secondary-light: #c8d2ea;
+      --accent: #d95d39;
+      --accent-light: #f3d0c8;
+      --dark: #581f18;
+      --dark-elevated: #4a1813;
       --background: #F9FAFB;
       --canvas: #ffffff;
-      --ink: #111827;
+      --ink: #581f18;
       --body: #374151;
       --muted: #6b7280;
       --muted-soft: #898989;
@@ -47,7 +47,7 @@
       --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
       --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
       --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
-      --shadow-glow: 0 0 40px rgba(37,99,235,0.15);
+      --shadow-glow: 0 0 40px rgba(240,162,2,0.15);
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -256,16 +256,16 @@
     /* Gradient backgrounds */
     .gradient-mesh {
       background: 
-        radial-gradient(ellipse at 20% 30%, rgba(37,99,235,0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 70%, rgba(34,197,94,0.06) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 50%, rgba(249,115,22,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 30%, rgba(240,162,2,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(32,44,89,0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(217,93,57,0.04) 0%, transparent 50%),
         var(--canvas);
     }
     .gradient-hero {
       background: 
-        radial-gradient(ellipse at 30% 20%, rgba(37,99,235,0.12) 0%, transparent 60%),
-        radial-gradient(ellipse at 70% 80%, rgba(34,197,94,0.08) 0%, transparent 60%),
-        radial-gradient(ellipse at 50% 50%, rgba(249,115,22,0.05) 0%, transparent 50%),
+        radial-gradient(ellipse at 30% 20%, rgba(240,162,2,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 80%, rgba(32,44,89,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 50% 50%, rgba(217,93,57,0.05) 0%, transparent 50%),
         linear-gradient(180deg, var(--canvas) 0%, var(--background) 100%);
     }
     .gradient-cta {
@@ -278,9 +278,9 @@
       position: absolute;
       inset: 0;
       background: 
-        radial-gradient(ellipse at 30% 40%, rgba(37,99,235,0.2) 0%, transparent 50%),
-        radial-gradient(ellipse at 70% 60%, rgba(34,197,94,0.15) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 50%, rgba(249,115,22,0.1) 0%, transparent 50%);
+        radial-gradient(ellipse at 30% 40%, rgba(240,162,2,0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 60%, rgba(32,44,89,0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(217,93,57,0.1) 0%, transparent 50%);
       pointer-events: none;
     }
 
@@ -510,14 +510,14 @@
       height: 12px;
       background: var(--primary);
       border-radius: 50%;
-      box-shadow: 0 0 0 4px rgba(37,99,235,0.2), 0 0 20px rgba(37,99,235,0.4);
+      box-shadow: 0 0 0 4px rgba(240,162,2,0.2), 0 0 20px rgba(240,162,2,0.4);
       animation: pulse-glow 2s ease-in-out infinite;
     }
     .location-pin:nth-child(1) { top: 25%; left: 20%; animation-delay: 0s; }
-    .location-pin:nth-child(2) { top: 35%; left: 45%; animation-delay: 0.5s; background: var(--secondary); box-shadow: 0 0 0 4px rgba(34,197,94,0.2), 0 0 20px rgba(34,197,94,0.4); }
-    .location-pin:nth-child(3) { top: 20%; left: 70%; animation-delay: 1s; background: var(--accent); box-shadow: 0 0 0 4px rgba(249,115,22,0.2), 0 0 20px rgba(249,115,22,0.4); }
+    .location-pin:nth-child(2) { top: 35%; left: 45%; animation-delay: 0.5s; background: var(--secondary); box-shadow: 0 0 0 4px rgba(32,44,89,0.2), 0 0 20px rgba(32,44,89,0.4); }
+    .location-pin:nth-child(3) { top: 20%; left: 70%; animation-delay: 1s; background: var(--accent); box-shadow: 0 0 0 4px rgba(217,93,57,0.2), 0 0 20px rgba(217,93,57,0.4); }
     .location-pin:nth-child(4) { top: 55%; left: 30%; animation-delay: 1.5s; }
-    .location-pin:nth-child(5) { top: 50%; left: 60%; animation-delay: 0.3s; background: var(--secondary); box-shadow: 0 0 0 4px rgba(34,197,94,0.2), 0 0 20px rgba(34,197,94,0.4); }
+    .location-pin:nth-child(5) { top: 50%; left: 60%; animation-delay: 0.3s; background: var(--secondary); box-shadow: 0 0 0 4px rgba(32,44,89,0.2), 0 0 20px rgba(32,44,89,0.4); }
 
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
@@ -709,8 +709,8 @@
       position: absolute;
       inset: 0;
       background: 
-        radial-gradient(ellipse at 20% 50%, rgba(37,99,235,0.15) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 50%, rgba(34,197,94,0.1) 0%, transparent 50%);
+        radial-gradient(ellipse at 20% 50%, rgba(240,162,2,0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(32,44,89,0.1) 0%, transparent 50%);
       pointer-events: none;
     }
     .stat-item { position: relative; z-index: 1; }
@@ -957,7 +957,7 @@
       height: 8px;
       background: var(--primary);
       border-radius: 50%;
-      box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+      box-shadow: 0 0 0 3px rgba(240,162,2,0.2);
     }
     .dashboard-calendar {
       display: grid;
@@ -1087,8 +1087,8 @@
       position: absolute;
       inset: 0;
       background: 
-        radial-gradient(ellipse at 30% 30%, rgba(37,99,235,0.15) 0%, transparent 50%),
-        radial-gradient(ellipse at 70% 70%, rgba(34,197,94,0.1) 0%, transparent 50%);
+        radial-gradient(ellipse at 30% 30%, rgba(240,162,2,0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 70%, rgba(32,44,89,0.1) 0%, transparent 50%);
       pointer-events: none;
     }
     .global-stats-grid {
@@ -1859,8 +1859,8 @@
                     <path d="M40,130 Q70,110 100,130 T150,120 T200,140 T250,130 T300,150 T350,140" fill="none" stroke="#94a3b8" stroke-width="1"/>
                   </svg>
                   <div class="map-pin" style="top: 35%; left: 25%;"></div>
-                  <div class="map-pin" style="top: 45%; left: 50%; background: var(--secondary); box-shadow: 0 0 0 3px rgba(34,197,94,0.2);"></div>
-                  <div class="map-pin" style="top: 30%; left: 70%; background: var(--accent); box-shadow: 0 0 0 3px rgba(249,115,22,0.2);"></div>
+                  <div class="map-pin" style="top: 45%; left: 50%; background: var(--secondary); box-shadow: 0 0 0 3px rgba(32,44,89,0.2);"></div>
+                  <div class="map-pin" style="top: 30%; left: 70%; background: var(--accent); box-shadow: 0 0 0 3px rgba(217,93,57,0.2);"></div>
                 </div>
                 <div>
                   <div class="calendar-header">
