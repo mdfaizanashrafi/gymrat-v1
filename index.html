@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="GymRat — Train Anywhere. Keep Every Streak. Discover gyms, book sessions, and maintain your progress anywhere in the world.">
   <title>GymRat — Train Anywhere. Keep Every Streak.</title>
+  <link rel="icon" type="image/png" href="./assets/gymrat-favicon.png">
+  <link rel="apple-touch-icon" href="./assets/gymrat-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -309,17 +311,22 @@
       justify-content: space-between;
     }
     .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       font-family: var(--font-display);
       font-size: 22px;
       font-weight: 700;
       color: var(--ink);
       letter-spacing: -0.5px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
-    .nav-logo i { color: var(--primary); font-size: 20px; }
-    .nav-logo span { color: var(--primary); }
+
+    .nav-logo-img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
     .nav-links {
       display: flex;
       align-items: center;
@@ -1559,8 +1566,8 @@
   <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#" class="nav-logo" aria-label="GymRat Home">
-        <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
-        Gym<span>Rat</span>
+        <img src="./assets/gymrat-favicon.png" alt="GymRat Logo" class="nav-logo-img">
+        <span>GymRat</span>
       </a>
       <div class="nav-links">
         <a href="#features" class="nav-link">Features</a>
